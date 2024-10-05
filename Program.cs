@@ -9,5 +9,19 @@ Person person = new()
   ]
 };
 
-string JsonString = JsonSerializer.Serialize(person);
+Person anotherPerson = new()
+{
+  Name = "Lisa",
+  Age = 37,
+  Hobbies = [
+    "Biking"
+  ]
+};
+
+List<Person> people = [
+  person,
+  anotherPerson
+];
+
+string JsonString = JsonSerializer.Serialize(people);
 Console.WriteLine(JsonString);
