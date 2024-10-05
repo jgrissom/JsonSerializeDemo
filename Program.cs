@@ -24,4 +24,5 @@ List<Person> people = [
 ];
 
 string JsonString = JsonSerializer.Serialize(people);
-Console.WriteLine(JsonString);
+// Console.WriteLine(JsonString);
+File.WriteAllText("people.json", JsonString);
