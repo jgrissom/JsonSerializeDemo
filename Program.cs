@@ -2,7 +2,8 @@
 
 Person person = new()
 {
-  Name = "Joe"
+  Name = "Joe",
+  Age = 22
 };
 
 string JsonString = JsonSerializer.Serialize(person);
